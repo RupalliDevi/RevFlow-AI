@@ -1,6 +1,6 @@
 # RevFlow AI 🚀
 
-Currently working on RevFlow AI — an AI-powered ETL pipeline project for Amazon review analysis using Python, Airflow, OpenAI API, PostgreSQL, and AWS.
+Currently building RevFlow AI — a cloud-native AI-powered ETL pipeline for Amazon review analytics using Python, Airflow, OpenAI API, PostgreSQL, and AWS.
 
 ## Project Idea
 
@@ -55,9 +55,55 @@ Analytics Dashboard
 
 ---
 
+## Project Structure
+
+```text
+revflow-ai/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── .env.example
+│
+├── data/
+│   ├── raw/          # Original datasets
+│   ├── processed/    # Cleaned and transformed data
+│   └── sample/       # Small datasets for testing
+│
+├── notebooks/        # Exploratory analysis and experiments
+│
+├── src/
+│   ├── extract/      # Data extraction scripts
+│   ├── transform/    # Data cleaning and transformation logic
+│   ├── load/         # Database loading scripts
+│   ├── ai/           # AI processing and LLM integrations
+│   └── utils/        # Helper functions and utilities
+│
+├── airflow/
+│   ├── dags/         # Airflow workflows
+│   └── logs/         # Airflow logs
+│
+├── database/
+│   ├── schema.sql    # Database schema
+│   └── queries/      # SQL queries
+│
+├── streamlit_app/    # Analytics dashboard
+│
+├── tests/            # Unit and integration tests
+│
+├── docs/
+│   ├── architecture/ # System diagrams
+│   └── screenshots/  # Dashboard and project screenshots
+│
+└── deployment/
+    ├── aws/          # AWS deployment resources
+    └── docker/       # Docker configurations
+```
+
+
 ## Current Status
 
-🛠️ Currently in planning and architecture phase.
+🛠️ Project initialized. Repository structure, documentation, and architecture planning completed. Dataset exploration and pipeline development are next.
 
 ---
 
